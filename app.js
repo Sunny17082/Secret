@@ -24,7 +24,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect("mongodb://0.0.0.0:27017/userDB")
+mongoose.connect("mongodb+srv://admin:admin1234@cluster0.fglied8.mongodb.net/userdb?retryWrites=true&w=majority")
 .then( () => console.log("Connection successful....."))
 .catch( (err) => console.log(err));
 
